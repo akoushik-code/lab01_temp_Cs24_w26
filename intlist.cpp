@@ -95,13 +95,13 @@ int IntList::max() const {
 // 0 if list is empty
 double IntList::average() const {
    Node *curr = head; 
-   int elem = 0; 
+   double elem = 0.0; 
    while(curr){
     elem ++;
     curr = curr->next; 
   }
   if(elem!=0){
-    return this->sum()/elem;}
+    return double(this->sum())/elem;}
     return 0;  
 }
 // inserts value as new node at beginning of list
