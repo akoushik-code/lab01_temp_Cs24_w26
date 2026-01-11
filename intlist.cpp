@@ -110,7 +110,7 @@ void IntList::push_front(int value) {
     Node *newNode = new Node(); 
     newNode->info = value; 
     newNode -> next = head; 
-     if(head == tail){
+     if(!head&&!tail){
         tail = newNode; 
      }
     head = newNode; 
